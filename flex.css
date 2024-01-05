@@ -92,8 +92,13 @@
         width: 50%;
     }
     
-    .fifth {
-        flex-direction: column;
+    .fifth{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .fifth__card {
+        width: 45%;
     }
 
     .packages {
