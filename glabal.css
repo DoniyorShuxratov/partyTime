@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--bg-shade );
+}
+
 h1,
 h2{
     margin: 0;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 h3,
@@ -31,6 +35,11 @@ a {
 h1 {
     font-size: 84px;
     color: var(--white);
+}
+
+p {
+   font-size: 18px ;
+   color: var(--white);
 }
 
 :root {
@@ -91,4 +100,73 @@ h1 {
     align-items: center;
     justify-content: center;
     height: 100%;
+}
+.hero p {
+    font-size: 48px;
+}
+.hero__text {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.hero__text p:last-child {
+    background: linear-gradient(to right, var(--pink), var(--blue));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.header--title {
+    color: var(--white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+.header--title  span{
+    color: var(--pink);
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.header--title h2{
+    color: var(--white);
+    text-align: center;
+    font-size: 84px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.second__cards{
+    color: var(--white);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+}
+.second__card h2{
+    color: var(--pink);
+    text-align: center;
+    font-size: 84px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.second__card span{
+    color: var(--white);
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
