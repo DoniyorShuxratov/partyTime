@@ -1,0 +1,87 @@
+@media (width < 750px) {
+    .container{
+        width: 350px!important;
+        margin: 0 auto;
+    }
+
+    h1{
+        font-size: 32px!important;
+    }
+
+    .hero p {
+        font-size: 24px!important;
+    }
+
+    .header--title h2 {
+        font-size: 32px!important;
+    }
+    .header--title span {
+        font-size: 18px!important;
+    }
+
+
+    .nav__items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(151, 151, 151, 0.419);
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav > .nav__btn {
+        display: none;
+    }
+
+
+    .menu-icon {
+        display: block!important;
+    }
+
+    .second__cards {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .second__card {
+        margin: 0!important;
+        flex: 50%;
+    }
+
+    .second__card h2{
+        font-size: 42px!important;
+    }
+
+    .second__card span{
+        font-size: 18px!important;
+    }
+
+    .third {
+        flex-direction: column;
+    }
+    .third__left {
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .third__left--card {
+        flex-direction: column;
+        text-align: center;
+        width: 50%;
+    }
+    
+    .fifth {
+        flex-direction: column;
+    }
+
+    .packages {
+        flex-direction: column;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+}
