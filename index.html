@@ -11,28 +11,29 @@
 </head>
 <body>
     <header>
-        <nav class="nav--section">
+        <section class="top-nav">
             <div class="container">
                 <div class="nav">
-                    <div class="logo"><a href="#"><img src="./assets/img/logo.svg" alt=""></a></div>
-                    <ul class="nav__items">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Tabirlar</a></li>
-                        <li><a href="#">Bazim</a></li>
-                        <li><a href="#">Maxsus</a></li>
-                        <li><a href="#">O'yin kulgu</a></li>
-                        <li><a href="#">Boshqa</a></li>
-                        <li><a href="#">Contacts</a></li>
+                    <a href="#home"><img src="./assets/img/logo.svg" alt=""></a>
+                    <input id="menu-toggle" type="checkbox" />
+                    <label class='menu-button-container' for="menu-toggle">
+                        <div class='menu-button'></div>
+                    </label>
+                    <ul class="menu">
+                        <li><a href="#one">Tematik</a></li>
+                        <li><a href="#three">Chodir</a></li>
+                        <li><a href="#four">Maxsus bayramlar</a></li>
+                        <li><a href="#package">Paketlar</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
-                    <div class="menu-icon" onclick="toggleMenu()">
-                        <img src="./assets/img/menu.svg" alt="">
-                    </div>
-                    <button onclick="location.href=''" class="nav__btn btn">Contact us</button>
+                    <button class="btn">Contact us</button>
                 </div>
+                
             </div>
-        </nav>
+            
+        </section>
     </header>
-    <section class="hero--section">
+    <section id="home" class="hero--section">
         <div class="hero">
             <div class="container">
                 <h1>We are the best <br>EVENT organayzers</h1>
@@ -43,7 +44,7 @@
             </div>
         </div>
     </section>
-    <section class="second--section">
+    <section id="one" class="second--section">
         <div class="header--title">
             <span>BEST PAGES</span>
             <h2>Tematik tadbirlar</h2>
@@ -71,7 +72,7 @@
             </div>
         </div>
     </section>
-    <section class="third--section">
+    <section id="three" class="third--section">
         <div class="header--title">
             <span>SECOND PAGE</span>
             <h2>Chodir bazmlar</h2>
@@ -122,7 +123,7 @@
             </div>
         </div>
     </section>
-    <section class="fourth__page">
+    <section id="four" class="fourth__page">
         <div class="header--title">
             <span>THIRD PAGE</span>
             <h2>Maxsus bayramlar</h2>
@@ -237,7 +238,7 @@
             </div>
         </div>
     </section>
-    <section class="packages--section">
+    <section id="package" class="packages--section">
         <div class="header--title">
             <span>FIFTH PAGE</span>
             <h2>Paketlar</h2>
@@ -295,11 +296,11 @@
             </div>
         </div>
     </section>
-    <section class="contant--section">
+    <section id="contact" class="contant--section">
         <div class="container">
             <div class="header--title">
                 <span>FIFTH PAGE</span>
-                <h2>Paketlar</h2>
+                <h2>Contact</h2>
             </div>
             <div class="contact">
                 <div class="contact__card">

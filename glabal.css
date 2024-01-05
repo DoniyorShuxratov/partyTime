@@ -4,10 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--bg-shade );
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -74,42 +76,85 @@ p {
     color: var(--white);
     cursor: pointer;
 }
-.nav--section {
-    z-index: 500;
-    background: rgba(217, 217, 217, 0.10);
-    backdrop-filter: blur(12.5px);
+
+.top-nav {
     position: fixed;
     width: 100%;
+    background: rgba(217, 217, 217, 0.10);
+    backdrop-filter: blur(12.5px);
+    color: var(--white);
+    padding: 5px 0;
+    z-index: 500;
 }
 
 .nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    height: 70px;
+    align-items: center;
 }
 
-.nav__items {
+.menu {
     display: flex;
-    gap: 25px;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.show {
+.menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+    font-family: 'Roboto';
+}
+
+.menu-button-container {
     display: none;
-}
-
-.nav__items ul, li {
-    list-style: none;
-}
-
-/* Hamburger menu styles */
-.menu-icon {
-    display: none;
+    height: 100%;
+    width: 30px;
     cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.menu-icon > img{
-    width: 25px;
+#menu-toggle {
+    display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: var(--pink);
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.menu-button::before {
+    content: '';
+    margin-top: -8px;
+}
+
+.menu-button::after {
+    content: '';
+    margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
 }
 /* hero section */
 .hero--section {
@@ -303,6 +348,10 @@ p {
 }
 
 /* contact style */
+
+.contant--section {
+    margin-bottom: 50px;
+}
 
 .contact {
     display: flex;
